@@ -1,7 +1,79 @@
-html,body,ul{
+html,body,ul,li,a,img,div,h1,figure,figcaption{
 	padding: 0;
 	margin: 0;
 }
-ul{
+body{
+	width:100%;
+	// height: 100%;
+	font-size: 14px;
+	font-family: Arial;
+}
+.container{
+	width:1280px;
+	margin:0 auto;
+	overflow:hidden;
+}
+ul,ul li{
 	list-style: none;
+}
+header{
+	height: 70px;
+	background-color: #333;
+	line-height: 70px;
+	overflow: hidden;
+}
+h1{
+	// width: 25%;
+	float: left;
+	color: #fff;
+	font-size: 18px;
+	&:first-child{
+		width: 50%;
+		
+	}
+	&:nth-child(n+2){
+		width: 25%;
+		// float: right;
+	}
+}
+.content{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.mid_part{
+	width: 150px;
+	float: left;
+	margin: 0 auto;
+	li{
+		width:150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 1px solid #ccc;
+		text-align: center;
+		line-height: 150px;
+		font-size: 16px;
+		margin-bottom: 80px;
+	}
+}
+.section{
+	float: left;
+	width:565px;
+	overflow: hidden;
+	.img_part{
+		figure{
+			display: inline-block;
+			width: 270px;
+			height: 270px;
+			border-radius: 5px;
+			margin-right: 20px;
+			cursor: pointer;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
